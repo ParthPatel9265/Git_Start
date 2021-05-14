@@ -184,19 +184,123 @@ function Stopwatch(){
 // console.log(st);
 
 //spread operator
-a=[1,2,3];
-b=[4,5,6];
+// a=[1,2,3];
+// b=[4,5,6];
 
-const arr = [...a,...b];
-console.log(arr);
+// const arr = [...a,...b];
+// console.log(arr);
 
 
-const x= {
-    name :"parth"
+// const x= {
+//     name :"parth"
+// };
+// const y = {
+//     country : "India"
+// };
+
+// const z = {...x,...y,state:"gujarat"}
+// console.log(z);
+
+// //json
+
+
+// const ob= {
+//     name :"parth",
+//     length:1
+// };
+
+// jn = JSON.stringify(ob);
+// console.log(jn);
+
+// parsed = JSON.parse(`{\"name\":\"parth\",\"length\":1}`);
+// console.log(parsed);
+
+//inheritance
+
+// class Person {
+//     constructor(name){
+//         this.name= name;
+
+//     }   
+//     walk(){
+//         console.log("walk");
+//     }
+// }
+
+// class Teacher extends Person {
+//     constructor(name,degree){
+//        super(name);
+//        this.degree=degree;
+//     }
+//     teach(){
+//         console.log("teach");
+//     }
+// }
+
+// const teacher1 = new Teacher("parth","BE");
+// teacher1.teach()
+
+//  random number
+// const r = Math.random();
+// console.log(r);
+
+
+// input from the user
+// const min = parseInt(prompt("Enter a min value: "));
+// const max = parseInt(prompt("Enter a max value: "));
+// let a;
+// if(max > min)
+//   a=max;
+// else
+//   a=min;
+
+// console.log(`Random value between ${min} and ${max} is ${a}`);
+
+
+// factorial
+// function factorial(x) {
+
+//     if (x == 0) {
+//         return 1;
+//     }
+//     else {
+//         return x * factorial(x - 1);
+//     }
+// }
+
+// const num = prompt('Enter a number: ');
+
+// if (num >= 0) {
+//     const result = factorial(num);
+//     console.log(`The factorial of ${num} is ${result}`);
+// }
+// else {
+//     console.log('Please enter a positive number.');
+// }
+
+// object loop 
+
+// const person = { 
+//     name: 'parth',
+//     age: 21,
+//     Address : ['Gujarat', 'India'],
+// };
+
+// for (let key in person){ 
+//     let value;
+
+//     value = person[key];
+
+//     console.log(key + " - " +  value); 
+// } 
+
+//through Object.entries
+const person = { 
+    name: 'parth',
+    age: 21,
+    Address : ['Gujarat', 'India'],
 };
-const y = {
-    country : "India"
-};
 
-const z = {...x,...y,state:"gujarat"}
-console.log(z);
+for (let [key, value] of Object.entries(person)) {
+    console.log(key + " - " +  value);
+}
